@@ -30,13 +30,13 @@ export const HeroSection: FC<HeroSectionProps> = ({ scrollToSection }) => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <button
             onClick={() => scrollToSection('projects')}
-            className="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-full font-semibold transition-all transform hover:scale-105"
+            className="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-full font-semibold transition-all transform hover:scale-105 hover:cursor-pointer"
           >
             View My Work
           </button>
           <button
             onClick={() => scrollToSection('contact')}
-            className="border border-white hover:bg-white hover:text-gray-900 px-8 py-3 rounded-full font-semibold transition-all transform hover:scale-105"
+            className="border border-white hover:bg-white hover:text-gray-900 px-8 py-3 rounded-full font-semibold transition-all transform hover:scale-105 hover:cursor-pointer"
           >
             Get In Touch
           </button>

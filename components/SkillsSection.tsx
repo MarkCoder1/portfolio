@@ -1,50 +1,8 @@
+import { skillCategories } from '@/data';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { FC } from 'react';
 
-interface Skill {
-  name: string;
-  icon: string;
-}
-
-interface SkillCategory {
-  title: string;
-  color: string;
-  skills: Skill[];
-}
-
 export const SkillsSection: FC = () => {
-  const skillCategories: SkillCategory[] = [
-    {
-      title: 'Frontend',
-      color: 'blue',
-      skills: [
-        { name: 'React', icon: '⚛️' },
-        { name: 'Next.js', icon: '🔺' },
-        { name: 'Vue.js', icon: '💚' },
-        { name: 'Tailwind', icon: '🎨' },
-      ]
-    },
-    {
-      title: 'Backend',
-      color: 'green',
-      skills: [
-        { name: 'Node.js', icon: '📗' },
-        { name: 'Python', icon: '🐍' },
-        { name: 'MongoDB', icon: '🍃' },
-        { name: 'PostgreSQL', icon: '🐘' },
-      ]
-    },
-    {
-      title: 'Tools',
-      color: 'purple',
-      skills: [
-        { name: 'Git', icon: '🐙' },
-        { name: 'Docker', icon: '🐳' },
-        { name: 'AWS', icon: '☁️' },
-        { name: 'Webpack', icon: '🔧' },
-      ]
-    }
-  ];
-
   return (
     <section id="skills" className="py-20 bg-gray-900">
       <div className="max-w-6xl mx-auto px-4">
@@ -60,7 +18,9 @@ export const SkillsSection: FC = () => {
               <div className="grid grid-cols-2 gap-6">
                 {category.skills.map((skill) => (
                   <div key={skill.name} className="text-center group">
-                    <div className="text-3xl mb-2 group-hover:scale-110 transition-transform">{skill.icon}</div>
+                    <div className="text-3xl mb-2 group-hover:scale-110 transition-transform">
+                      <FontAwesomeIcon icon={skill.icon} />
+                    </div>
                     <span className="text-sm">{skill.name}</span>
                   </div>
                 ))}
