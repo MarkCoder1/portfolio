@@ -1,5 +1,5 @@
 import { ContactInfo } from '@/utils/ContactInfo';
-import React, { useState, FC, ChangeEvent } from 'react';
+import React, { FC } from 'react';
 import { ContactForm } from './ContactForm';
 
 export const ContactSection: FC = () => {

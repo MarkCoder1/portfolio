@@ -15,13 +15,13 @@ export const AboutSection: FC = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-gray-300 leading-relaxed">
-              I'm a passionate full-stack developer with over 5 years of experience creating innovative web applications. 
+              I&apos;m a passionate full-stack developer with over 5 years of experience creating innovative web applications. 
               My journey began with a curiosity for how things work on the web, and has evolved into a deep expertise 
               in modern web technologies.
             </p>
             <p className="text-lg text-gray-300 leading-relaxed">
-              I specialize in React, Next.js, Node.js, and modern cloud architectures. When I'm not coding, 
-              you'll find me exploring new technologies, contributing to open source projects, or mentoring 
+              I specialize in React, Next.js, Node.js, and modern cloud architectures. When I&apos;m not coding, 
+              you&apos;ll find me exploring new technologies, contributing to open source projects, or mentoring 
               aspiring developers.
             </p>
             <div className="flex flex-wrap gap-4 mt-8">
