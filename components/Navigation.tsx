@@ -2,6 +2,7 @@ import React, { useState, FC } from 'react';
 import { Menu, X } from 'lucide-react';
 import { SectionId } from '@/app/page';
 import { NavLink } from './NavLink';
+import Link from 'next/link';
 
 interface NavigationProps {
   activeSection: SectionId;
@@ -15,9 +16,11 @@ export const Navigation: FC<NavigationProps> = ({ activeSection, scrollToSection
     <nav className="fixed top-0 w-full z-50 bg-gray-900/80 backdrop-blur-lg border-b border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
-            MA
-          </div>
+          <Link href="/">
+            <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+              MA
+            </div>
+          </Link>
           
           <div className="hidden md:flex space-x-8">
             <NavLink href="home" activeSection={activeSection} scrollToSection={scrollToSection}>Home</NavLink>

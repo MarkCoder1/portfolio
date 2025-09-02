@@ -10,10 +10,7 @@ import {
   faCss3Alt,
   faJs,
 } from "@fortawesome/free-brands-svg-icons";
-import {
-  faDatabase,
-  faCogs,
-} from "@fortawesome/free-solid-svg-icons";
+import { faDatabase, faCogs } from "@fortawesome/free-solid-svg-icons";
 
 export const jobs: Job[] = [
   {
@@ -45,35 +42,27 @@ export const jobs: Job[] = [
   },
 ];
 
-export const skillCategories: SkillCategory[] = [
+export const skillCategories = [
   {
-    title: "Frontend",
-    color: "blue",
     skills: [
-      { name: "React", icon: faReact },
-      { name: "Next.js", icon: faJs }, // or faCode
-      { name: "Vue.js", icon: faVuejs },
-      { name: "Tailwind", icon: faCss3Alt }, // or faPalette
-    ],
-  },
-  {
-    title: "Backend",
-    color: "green",
-    skills: [
-      { name: "Node.js", icon: faNodeJs },
-      { name: "Python", icon: faPython },
-      { name: "MongoDB", icon: faDatabase },
-      { name: "PostgreSQL", icon: faDatabase },
-    ],
-  },
-  {
-    title: "Tools",
-    color: "purple",
-    skills: [
-      { name: "Git", icon: faGitAlt },
-      { name: "Docker", icon: faDocker },
-      { name: "AWS", icon: faAws },
-      { name: "Webpack", icon: faCogs },
+      { name: "HTML", svgPath: "/html.svg"}, // Replace with real paths
+      { name: "CSS", svgPath: "/css.svg"}, // Replace with real paths
+      { name: "JavaScript", svgPath: "/javascript.svg"}, // Replace with real paths
+      { name: "React", svgPath: "/react.svg"}, // Replace with real paths
+      { name: "Next.js", svgPath: "/next.png" },
+      { name: "Flutter", svgPath: "/flutter.svg" },
+      { name: "Tailwind", svgPath: "/tailwind.svg" },
+    
+
+
+      { name: "Git", svgPath: "/git.svg" },
+      { name: "Github", svgPath: "/github.svg" },
+      { name: "MongoDB", svgPath: "/mongo.svg" },
+      { name: "Firebase", svgPath: "/firebase.svg" },
+      { name: "Typescript", svgPath: "/typescript.svg" },
+      { name: "Supabase", svgPath: "/supabase.png" },
+      { name: "Python", svgPath: "/python.svg" },
+      { name: "Contentful", svgPath: "/contenful.png" },
     ],
   },
 ];

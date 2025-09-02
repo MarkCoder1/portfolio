@@ -8,6 +8,7 @@ import { ProjectsSection } from '@/components/ProjectsSection';
 import { ExperienceSection } from '@/components/ExperienceSection';
 import { ContactSection } from '@/components/ContactSection';
 import { Footer } from '@/components/Footer';
+import ParticleBackground from '@/components/ParticleBackground';
 
 // Define the type for the section IDs for type safety across components
 export type SectionId = 'home' | 'about' | 'skills' | 'projects' | 'experience' | 'contact';
@@ -55,6 +56,7 @@ const Portfolio: FC = () => {
       <ExperienceSection />
       <ContactSection />
       <Footer />
+      <ParticleBackground />
     </div>
   );
 };

@@ -1,38 +1,59 @@
 import { FC } from "react";
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Linkedin, Facebook } from "lucide-react";
 
 export const ContactInfo: FC = () => {
   const contactDetails = [
-    { icon: Mail, label: 'marcalber59@gmail.com' },
-    { icon: Phone, label: '+20 122 392 1106' },
-    { icon: MapPin, label: 'San Francisco, CA' }
+    {
+      icon: Mail,
+      label: "marcalber59@gmail.com",
+      href: "mailto:marcalber59@gmail.com",
+    },
+    {
+      icon: Phone,
+      label: "+20 122 392 1106",
+      href: "tel:+201223921106",
+    },
+    {
+      icon: MapPin,
+      label: "Egypt, Cairo",
+      href: "",
+    },
   ];
 
   const socialLinks = [
-    { icon: Github, href: '#' },
-    { icon: Linkedin, href: '#' },
-    { icon: Twitter, href: '#' }
+    { icon: Github, href: "https://github.com/lionzak" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/mark-alber1/" },
+    { icon: Facebook, href: "https://www.facebook.com/mark.alber.7543" },
   ];
 
   return (
     <div>
       <h3 className="text-2xl font-bold mb-6">Let's Work Together</h3>
       <p className="text-gray-300 mb-8">
-        I'm always interested in new opportunities and exciting projects. 
-        Whether you have a question or just want to say hi, feel free to reach out!
+        I'm always interested in new opportunities and exciting projects.
+        Whether you have a question or just want to say hi, feel free to reach
+        out!
       </p>
-      
+
+      {/* Contact details clickable */}
       <div className="space-y-4">
         {contactDetails.map((detail, index) => (
-          <div key={index} className="flex items-center gap-4 group">
-            <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center group-hover:bg-blue-700 transition-colors">
-              <detail.icon size={20} />
+          <a
+            key={index}
+            href={detail.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-4 group hover:text-blue-400 transition-colors"
+          >
+            <div className="w-14 h-14 rounded-full flex items-center justify-center group-hover:bg-blue-700 transition-colors">
+              <detail.icon size={32} />
             </div>
-            <span>{detail.label}</span>
-          </div>
+            <span className="text-lg">{detail.label}</span>
+          </a>
         ))}
       </div>
 
+      {/* Social links */}
       <div className="flex gap-4 mt-8">
         {socialLinks.map((social, index) => (
           <a
@@ -40,9 +61,9 @@ export const ContactInfo: FC = () => {
             href={social.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 bg-gray-700 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors"
+            className="w-12 h-12 bg-gray-700 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors"
           >
-            <social.icon size={20} />
+            <social.icon size={22} />
           </a>
         ))}
       </div>
