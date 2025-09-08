@@ -1,4 +1,4 @@
-import { Job, Project } from "./types";
+import { Job, Project } from "../types";
 
 
 export const projects: Project[] = [
@@ -6,7 +6,6 @@ export const projects: Project[] = [
     title: "Egyptian Marvels",
     description:
       "An interactive web experience showcasing Egypt’s most iconic historical and cultural landmarks, built with React and Next.js for fast rendering. The site integrates responsive design and an optimized image gallery to provide an immersive and accessible user experience across devices.",
-    gradient: "from-blue-500 to-purple-600",
     image: "/egyptian marvels.png",
     liveDemoUrl: "https://egyptian-marvels.vercel.app",
     githubUrl: "https://github.com/lionzak/egyptian-marvels",
@@ -20,7 +19,6 @@ export const projects: Project[] = [
     title: "Portfolio Manager & Analytics Dashboard",
     description:
       "A comprehensive platform for managing and analyzing portfolio performance, built with React and Next.js. The dashboard features interactive charts and real-time data updates to provide users with valuable insights into their website.",
-    gradient: "from-green-500 to-blue-600",
     image: "/dashboard.png",
     liveDemoUrl: "/",
     githubUrl: "https://github.com/lionzak/portfolio-dashboard",
@@ -32,10 +30,24 @@ export const projects: Project[] = [
     ],
   },
   {
+    title: "HC Furniture Mall",
+    description:
+      "A dynamic e-commerce platform designed to provide users with an engaging shopping experience. The website features a modern and responsive interface, allowing customers to seamlessly browse shops and categories, explore hot deals, and discover new arrivals. A custom-built dashboard enables mall administrators to efficiently manage shops, categories, and promotions. The site was developed with Contentful as a headless CMS for flexible content management and deployed on Hostinger for reliable hosting and performance.",
+    image: "/dashboard.png",
+    liveDemoUrl: "/",
+    githubUrl: "https://github.com/lionzak/portfolio-dashboard",
+    techImages: [
+      "/next.png",
+      "/typescript.svg",
+      "/contenful.png",
+      "/tailwind.svg",
+      "/hostinger.svg",
+    ],
+  },
+  {
     title: "CareMate App",
     description:
       "CareMate is a Flutter mobile app designed for elderly users and people with disabilities. It offers text-to-speech, speech-to-text, color recognition, medicine reminders, and a food evaluation tool that scores meals based on user health data. Built with Flutter, it focuses on accessibility and healthcare support.",
-    gradient: "from-green-500 to-blue-600",
     image: "/caremate.webp",
     liveDemoUrl: "/",
     githubUrl: "https://github.com/lionzak/Disability_Helper",
@@ -75,7 +87,7 @@ export const jobs: Job[] = [
     location: "Ain Shams University, Cairo",
     description:
       "Participated in a short-term training program focused on embedded systems and robotics. Assisted in building and programming robotic systems, gained hands-on experience with microcontrollers and sensors, and collaborated with peers on practical problem-solving activities.",
-    skills: ["JavaScript", "CSS3", "jQuery", "Sass"],
+    skills: ["C/C++", "Arduino", "Embedded Systems", "ESP32", ],
   },
 ];
 

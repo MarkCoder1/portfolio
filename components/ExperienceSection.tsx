@@ -1,4 +1,4 @@
-import { jobs } from '@/data';
+import { jobs } from '@/utils/data';
 import React, { FC } from 'react';
 import { ExperienceItem } from './ExperienceItem';
 

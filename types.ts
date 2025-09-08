@@ -20,7 +20,6 @@ export interface Job {
 export interface Project {
   title: string;
   description: string;
-  gradient: string;
   image: string;
   liveDemoUrl?: string;
   githubUrl?: string;

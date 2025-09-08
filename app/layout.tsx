@@ -3,6 +3,7 @@ import { Space_Grotesk } from 'next/font/google';
 import '../lib/fontawesome';
 import '@/app/globals.css'
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
@@ -30,6 +31,7 @@ export default function RootLayout({
         className={`${spaceGrotesk.className} antialiased`}
       >
         {children}
+        <Analytics />
 
       </body>
     </html>

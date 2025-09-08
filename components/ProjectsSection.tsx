@@ -2,7 +2,7 @@
 import React, { FC } from "react";
 import { motion } from "framer-motion";
 import { ProjectCard } from "./ProjectCard";
-import { projects } from "@/data";
+import { projects } from "@/utils/data";
 
 export const ProjectsSection: FC = () => {
 
