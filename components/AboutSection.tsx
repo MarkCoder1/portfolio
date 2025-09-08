@@ -3,6 +3,7 @@ import React, { FC } from "react";
 import { motion } from "framer-motion";
 import { Highlight } from "./TextHighlight";
 import ResumeButton from "./ResumeButton";
+import { FlipWords } from "./ui/flip-words";
 
 export const AboutSection: FC = () => {
   const traits = [
@@ -11,6 +12,8 @@ export const AboutSection: FC = () => {
     { name: "Quick Learner", color: "bg-pink-600" },
     { name: "Detail Oriented", color: "bg-green-600" },
   ];
+
+  const words = ["modern", "responsive", "dynamic", "engaging", "intuitive", "cutting-edge", "innovative", "scalable  "];
 
   return (
     <section id="about" className="py-20 bg-gray-800">
@@ -33,7 +36,7 @@ export const AboutSection: FC = () => {
           className="space-y-6 max-w-3xl mx-auto text-center"
         >
           <p className="text-lg text-gray-300 leading-relaxed">
-            I&apos;m a passionate full-stack developer creating innovative web applications. My journey began
+            I&apos;m a passionate full-stack developer creating <FlipWords words={words} duration={1000} className="text-gray-200 font-bold text-3xl m-0"/> web applications. My journey began
             with a curiosity for how things work on the web, and has evolved
             into a deep expertise in modern web technologies.
           </p>
