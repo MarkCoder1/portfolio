@@ -33,8 +33,7 @@ export const AboutSection: FC = () => {
           className="space-y-6 max-w-3xl mx-auto text-center"
         >
           <p className="text-lg text-gray-300 leading-relaxed">
-            I&apos;m a passionate full-stack developer with over 5 years of
-            experience creating innovative web applications. My journey began
+            I&apos;m a passionate full-stack developer creating innovative web applications. My journey began
             with a curiosity for how things work on the web, and has evolved
             into a deep expertise in modern web technologies.
           </p>
