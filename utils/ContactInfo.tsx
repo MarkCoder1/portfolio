@@ -54,19 +54,23 @@ export const ContactInfo: FC = () => {
       </div>
 
       {/* Social links */}
-      <div className="flex gap-4 mt-8">
+      <div className="flex gap-6 mt-8">
         {socialLinks.map((social, index) => (
           <a
             key={index}
             href={social.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-12 h-12 bg-gray-700 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors"
+            className="w-16 h-16 bg-gray-700 hover:bg-blue-600 rounded-full flex items-center justify-center transition-colors group"
           >
-            <social.icon size={22} />
+            <social.icon
+              size={32}
+            />
           </a>
         ))}
       </div>
+
+
     </div>
   );
 };

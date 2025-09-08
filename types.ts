@@ -1,4 +1,5 @@
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import { ReactNode } from "react";
 
 export interface ContactFormData {
   name: string;
@@ -15,14 +16,17 @@ export interface Job {
   skills: string[];
 }
 
+
 export interface Project {
   title: string;
   description: string;
-  icon: string;
   gradient: string;
-  tags: string[];
-  tagColors: string[];
+  image: string;
+  liveDemoUrl?: string;
+  githubUrl?: string;
+  techImages: string[]; // 👈 Array of image paths instead of JSX icons
 }
+
 
 interface Skill {
   name: string;

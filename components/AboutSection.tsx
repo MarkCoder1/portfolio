@@ -64,7 +64,9 @@ export const AboutSection: FC = () => {
           </motion.div>
 
           {/* Resume Button */}
-          <ResumeButton />
+          <div className="">
+            <ResumeButton />
+          </div>
         </motion.div>
       </div>
     </section>

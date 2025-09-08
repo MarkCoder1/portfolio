@@ -47,15 +47,17 @@ const Portfolio: FC = () => {
   };
 
   return (
-    <div className="bg-gray-900 text-white min-h-screen">
+    <div className="bg-gray-900 text-white min-h-screen overflow-x-hidden">
       <Navigation activeSection={activeSection} scrollToSection={scrollToSection} />
-      <HeroSection scrollToSection={scrollToSection} />
-      <AboutSection />
-      <SkillsSection />
-      <ProjectsSection />
-      <ExperienceSection />
-      <ContactSection />
-      <Footer />
+      <main className="relative">
+        <HeroSection scrollToSection={scrollToSection} />
+        <AboutSection />
+        <SkillsSection />
+        <ProjectsSection />
+        <ExperienceSection />
+        <ContactSection />
+        <Footer />
+      </main>
       <ParticleBackground />
     </div>
   );

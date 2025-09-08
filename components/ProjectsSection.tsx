@@ -1,43 +1,14 @@
 "use client";
 import React, { FC } from "react";
 import { motion } from "framer-motion";
-import { Project } from "@/types";
 import { ProjectCard } from "./ProjectCard";
+import { projects } from "@/data";
 
 export const ProjectsSection: FC = () => {
-  const projects: Project[] = [
-    {
-      title: "E-Commerce Platform",
-      description:
-        "Full-stack e-commerce solution with React, Node.js, and Stripe integration.",
-      icon: "🚀",
-      gradient: "from-blue-500 to-purple-600",
-      tags: ["React", "Node.js", "MongoDB"],
-      tagColors: ["bg-blue-600", "bg-green-600", "bg-purple-600"],
-    },
-    {
-      title: "Task Management App",
-      description:
-        "Collaborative task management with real-time updates and team features.",
-      icon: "📱",
-      gradient: "from-green-500 to-blue-600",
-      tags: ["Next.js", "Socket.io", "Redis"],
-      tagColors: ["bg-blue-600", "bg-yellow-600", "bg-red-600"],
-    },
-    {
-      title: "Analytics Dashboard",
-      description:
-        "Real-time analytics dashboard with interactive charts and data visualization.",
-      icon: "📊",
-      gradient: "from-purple-500 to-pink-600",
-      tags: ["Vue.js", "Chart.js", "Firebase"],
-      tagColors: ["bg-blue-600", "bg-green-600", "bg-orange-600"],
-    },
-  ];
 
   return (
     <section id="projects" className="py-20 bg-gray-800">
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4"> {/* Increased from max-w-6xl to max-w-7xl */}
         <motion.h2
           initial={{ opacity: 0, y: -40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -49,7 +20,7 @@ export const ProjectsSection: FC = () => {
         </motion.h2>
 
         <motion.div
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
