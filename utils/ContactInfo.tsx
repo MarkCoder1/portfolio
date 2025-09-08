@@ -54,7 +54,7 @@ export const ContactInfo: FC = () => {
       </div>
 
       {/* Social links */}
-      <div className="flex gap-6 mt-8">
+      <div className="flex gap-10 mt-8">
         {socialLinks.map((social, index) => (
           <a
             key={index}
