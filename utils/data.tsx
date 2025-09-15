@@ -34,8 +34,8 @@ export const projects: Project[] = [
     description:
       "A dynamic e-commerce platform designed to provide users with an engaging shopping experience. The website features a modern and responsive interface, allowing customers to seamlessly browse shops and categories, explore hot deals, and discover new arrivals. A custom-built dashboard enables mall administrators to efficiently manage shops, categories, and promotions. The site was developed with Contentful as a headless CMS for flexible content management and deployed on Hostinger for reliable hosting and performance.",
     image: "/hcmall.webp",
-    liveDemoUrl: "/",
-    githubUrl: "https://github.com/lionzak/portfolio-dashboard",
+    liveDemoUrl: "https://www.hcfurnituremall.com/",
+    githubUrl: "/",
     techImages: [
       "/next.png",
       "/typescript.svg",
