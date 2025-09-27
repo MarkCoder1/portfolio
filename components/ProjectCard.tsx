@@ -14,11 +14,11 @@ export const ProjectCard: FC<ProjectCardProps> = ({ project }) => {
   transition-all duration-300 hover:-translate-y-3 group w-full h-[600px] max-w-sm mx-auto flex flex-col"
         >
             {/* Project Image */}
-            <div className="h-64 w-full overflow-hidden flex-shrink-0">
+            <div className="w-full flex-shrink-0 hover:scale-105 transition-transform duration-300">
                 <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-auto object-contain bg-black"
                 />
             </div>
 

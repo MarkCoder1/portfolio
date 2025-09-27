@@ -3,6 +3,23 @@ import { Job, Project } from "../types";
 
 export const projects: Project[] = [
   {
+    title: "TrackPal",
+    description:
+      "TrackPal is a comprehensive productivity and finance tracking application designed to help users manage their daily tasks, weekly goals, and personal finances efficiently. Available as a web application and an Android mobile app, TrackPal empowers students, young professionals, and anyone interested in optimizing their daily routines and financial health. The app features intuitive tracking tools, visualizations, and AI-powered insights to streamline personal development and money management.",
+    image: "/trackpal.png",
+    liveDemoUrl: "http://trackpal.vercel.app",
+    githubUrl: "https://github.com/lionzak/TrackPal",
+    techImages: [
+      "/next.png",
+      "/typescript.svg",
+      "/tailwind.svg",
+      "/supabase.png",
+      "/capacitorjs.jpg",
+      "/chartjs.png",
+      "/resend.png",
+    ],
+  },
+  {
     title: "Egyptian Marvels",
     description:
       "An interactive web experience showcasing Egypt’s most iconic historical and cultural landmarks, built with React and Next.js for fast rendering. The site integrates responsive design and an optimized image gallery to provide an immersive and accessible user experience across devices.",
@@ -27,6 +44,7 @@ export const projects: Project[] = [
       "/typescript.svg",
       "/supabase.png",
       "/tailwind.svg",
+      "/google_analytics.png",
     ],
   },
   {
@@ -87,7 +105,7 @@ export const jobs: Job[] = [
     location: "Ain Shams University, Cairo",
     description:
       "Participated in a short-term training program focused on embedded systems and robotics. Assisted in building and programming robotic systems, gained hands-on experience with microcontrollers and sensors, and collaborated with peers on practical problem-solving activities.",
-    skills: ["C/C++", "Arduino", "Embedded Systems", "ESP32", ],
+    skills: ["C/C++", "Arduino", "Embedded Systems", "ESP32",],
   },
 ];
 
