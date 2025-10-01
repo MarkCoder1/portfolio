@@ -6,7 +6,7 @@ export const projects: Project[] = [
     title: "TrackPal",
     description:
       "TrackPal is a comprehensive productivity and finance tracking application designed to help users manage their daily tasks, weekly goals, and personal finances efficiently. Available as a web application and an Android mobile app, TrackPal empowers students, young professionals, and anyone interested in optimizing their daily routines and financial health. The app features intuitive tracking tools, visualizations, and AI-powered insights to streamline personal development and money management.",
-    image: "/trackpal .png",
+    image: "/trackpal.png",
     liveDemoUrl: "http://trackpal.vercel.app",
     githubUrl: "https://github.com/lionzak/TrackPal",
     techImages: [
