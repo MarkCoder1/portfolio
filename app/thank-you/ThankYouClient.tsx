@@ -78,7 +78,7 @@ const ThankYouClient = () => {
               Back to Home
             </Link>
             <a
-              href="https://wa.me/201223921106"
+              href="https://wa.me/8325280308"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-6 py-3 rounded-lg bg-[#1DBF73] text-white font-semibold hover:bg-[#17a463] transition-colors min-h-[48px] flex items-center justify-center"
