@@ -10,18 +10,18 @@ export const ContactInfo: FC = () => {
     },
     {
       icon: Phone,
-      label: "+20 122 392 1106",
-      href: "tel:+201223921106",
+      label: "+1 (832) 528-0308",
+      href: "tel:+1 (832) 528-0308",
     },
     {
       icon: MapPin,
-      label: "Egypt, Cairo",
+      label: "United States",
       href: "",
     },
   ];
 
   const socialLinks = [
-    { icon: Github, href: "https://github.com/lionzak" },
+    { icon: Github, href: "https://github.com/MarkCoder1" },
     { icon: Linkedin, href: "https://www.linkedin.com/in/mark-alber1/" },
     { icon: Facebook, href: "https://www.facebook.com/mark.alber.7543" },
   ];

@@ -86,7 +86,7 @@ export const HeroSection: FC<HeroSectionProps> = ({ scrollToSection }) => {
           className="flex justify-center gap-4 sm:gap-6 mb-8 sm:mb-10"
         >
           {[
-            { Icon: Github, href: "https://github.com/lionzak" },
+            { Icon: Github, href: "https://github.com/MarkCoder1" },
             { Icon: Linkedin, href: "https://www.linkedin.com/in/mark-alber1/" },
             { Icon: Facebook, href: "https://www.facebook.com/mark.alber.7543" },
           ].map(({ Icon, href }, i) => (

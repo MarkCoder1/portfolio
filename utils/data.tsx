@@ -8,7 +8,7 @@ export const projects: Project[] = [
       "TrackPal is a comprehensive productivity and finance tracking application designed to help users manage their daily tasks, weekly goals, and personal finances efficiently. Available as a web application and an Android mobile app, TrackPal empowers students, young professionals, and anyone interested in optimizing their daily routines and financial health. The app features intuitive tracking tools, visualizations, and AI-powered insights to streamline personal development and money management.",
     image: "/trackpal.png",
     liveDemoUrl: "http://trackpal.vercel.app",
-    githubUrl: "https://github.com/lionzak/TrackPal",
+    githubUrl: "https://github.com/MarkCoder1/TrackPal",
     techImages: [
       "/next.png",
       "/typescript.svg",
@@ -25,7 +25,7 @@ export const projects: Project[] = [
       "An interactive web experience showcasing Egypt’s most iconic historical and cultural landmarks, built with React and Next.js for fast rendering. The site integrates responsive design and an optimized image gallery to provide an immersive and accessible user experience across devices.",
     image: "/egyptian marvels.png",
     liveDemoUrl: "https://egyptian-marvels.vercel.app",
-    githubUrl: "https://github.com/lionzak/egyptian-marvels",
+    githubUrl: "https://github.com/MarkCoder1/egyptian-marvels",
     techImages: [
       "/next.png",
       "/typescript.svg",
@@ -38,7 +38,7 @@ export const projects: Project[] = [
       "A comprehensive platform for managing and analyzing portfolio performance, built with React and Next.js. The dashboard features interactive charts and real-time data updates to provide users with valuable insights into their website.",
     image: "/dashboard.png",
     liveDemoUrl: "/",
-    githubUrl: "https://github.com/lionzak/portfolio-dashboard",
+    githubUrl: "https://github.com/MarkCoder1/portfolio-dashboard",
     techImages: [
       "/next.png",
       "/typescript.svg",
@@ -68,7 +68,7 @@ export const projects: Project[] = [
       "CareMate is a Flutter mobile app designed for elderly users and people with disabilities. It offers text-to-speech, speech-to-text, color recognition, medicine reminders, and a food evaluation tool that scores meals based on user health data. Built with Flutter, it focuses on accessibility and healthcare support.",
     image: "/caremate.webp",
     liveDemoUrl: "/",
-    githubUrl: "https://github.com/lionzak/Disability_Helper",
+    githubUrl: "https://github.com/MarkCoder1/Disability_Helper",
     techImages: [
       "/flutter.svg",
       "/dart.svg",
